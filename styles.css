@@ -1,16 +1,26 @@
+body {
+  padding:0;
+  margin:0;
+}
+
+html {
+  background-color: grey;
+}
+
 #navbar {
-    position: relative;
-    height: 200px;
+    margin: 0;
+    position: fixed;
+    height: 150px;
     width: 100%;
+    background-color: white;
     overflow: hidden;
-    background-color: grey;
 
     /* silly text stuff */
-    line-height: 200px;
+    line-height: 150px;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 80px;
-
+    
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -19,29 +29,19 @@
   
 
   /* im so sorry */
-  #navbar:before { 
-    content: '';
+  .greennav {
     position: absolute;
-    left: 59%;
-    width: 70%; 
-    height: 1000%; 
-    background-color: rgb(255, 255, 255); /* fallback */
-    background-color: green;
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    top: -1166px;
+    left: -500px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
-  #navbar:after { 
-    content: '';
+  .rednav {
     position: absolute;
-    right: 60%;
-    width: 70%; 
-    height: 1000%; 
-    background-color: rgb(255, 255, 255); /* fallback */
-    background-color: red;
-    top: -800%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
+    top: -1166px;
+    right: -500px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
